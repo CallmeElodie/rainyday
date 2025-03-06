@@ -10,7 +10,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Sigma")
 
 # Load the player image (Make sure you have a player_image.png file in the same directory)
-player_image = pygame.image.load('player_image.png')  # Replace with your image file path
+player_image = pygame.image.load('images/player_image.png')  # Replace with your image file path
 
 # Resize the image to a smaller size (e.g., 50x50)
 player_image = pygame.transform.scale(player_image, (100, 100))
