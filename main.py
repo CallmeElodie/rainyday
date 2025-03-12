@@ -1,5 +1,8 @@
 import pygame
 
+playerSprite = pygame.image.load('images/player_image.png')
+groundSprite = pygame.image.load('images/ground.png')
+
 # Initialize pygame
 pygame.init()
 SCREEN_WIDTH = 400
@@ -7,16 +10,18 @@ SCREEN_HEIGHT = 400
 
 # Setup the screen
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Sigma")
+pygame.display.set_caption("RainyDay")
+pygame.display.set_icon(playerSprite)
 
-# Load the player image (Make sure you have a player_image.png file in the same directory)
-player_image = pygame.image.load('images/player_image.png')  # Replace with your image file path
+# Load the player image (Make sure you have a playerSprite.png file in the same directory)
 
 # Resize the image to a smaller size (e.g., 50x50)
-player_image = pygame.transform.scale(player_image, (100, 100))
+playerSprite = pygame.transform.scale(playerSprite, (100, 100))
+groundSprite = pygame.transform.scale(groundSprite, (SCREEN_HEIGHT, 80))
 
 # Define the player object (position and size based on the resized image)
-player = pygame.Rect(175, 300, player_image.get_width(), player_image.get_height())
+player = pygame.Rect(150, 100, playerSprite.get_width(), playerSprite.get_height())
+ground = pygame.Rect(0, SCREEN_HEIGHT -80, groundSprite.get_width(), groundSprite.get_height())
 
 # Define the speed (slower movement using pixels per frame)
 speed = 2  # Move 1 pixel per frame, adjust as needed
@@ -32,7 +37,8 @@ while run:
     screen.fill((200, 200, 255))
 
     # Draw the resized player image onto the screen at the player's position
-    screen.blit(player_image, player.topleft)
+    screen.blit(playerSprite, player.topleft)
+    screen.blit(groundSprite, ground.topleft)
 
     # Get key states
     key = pygame.key.get_pressed()
@@ -52,8 +58,8 @@ while run:
             player.top = 0  # Prevent moving out of the top boundary
     if key[pygame.K_s]:  # Move down
         player.move_ip(0, speed)
-        if player.bottom > SCREEN_HEIGHT:
-            player.bottom = SCREEN_HEIGHT  # Prevent moving out of the bottom boundary
+        if player.bottom > SCREEN_HEIGHT - 100:
+            player.bottom = SCREEN_HEIGHT - 100  # Prevent moving out of the bottom boundary
 
     # Sprint
     # Sprint
