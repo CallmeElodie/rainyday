@@ -1,5 +1,6 @@
 import pygame
 
+# Sprite declaration
 playerSprite = pygame.image.load('images/player_image.png')
 groundSprite = pygame.image.load('images/ground.png')
 
@@ -8,23 +9,21 @@ pygame.init()
 SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 400
 
-# Setup the screen
+# Set up the screen
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("RainyDay")
 pygame.display.set_icon(playerSprite)
 
-# Load the player image (Make sure you have a playerSprite.png file in the same directory)
-
-# Resize the image to a smaller size (e.g., 50x50)
+# Size the images
 playerSprite = pygame.transform.scale(playerSprite, (100, 100))
 groundSprite = pygame.transform.scale(groundSprite, (SCREEN_WIDTH, 80))
 
-# Define the player object (position and size based on the resized image)
+# Define the objects
 player = pygame.Rect(150, 100, playerSprite.get_width(), playerSprite.get_height())
 ground = pygame.Rect(0, SCREEN_HEIGHT -groundSprite.get_height(), groundSprite.get_width(), groundSprite.get_height())
 
-# Define the speed (slower movement using pixels per frame)
-speed = 2  # Move 1 pixel per frame, adjust as needed
+# Define the speed
+speed = 2
 
 # Create a clock object to control the frame rate
 clock = pygame.time.Clock()
@@ -58,8 +57,8 @@ while run:
             player.top = 0  # Prevent moving out of the top boundary
     if key[pygame.K_s]:  # Move down
         player.move_ip(0, speed)
-        if player.bottom > SCREEN_HEIGHT - 100:
-            player.bottom = SCREEN_HEIGHT - 100  # Prevent moving out of the bottom boundary
+        if player.bottom > SCREEN_HEIGHT - 200:
+            player.bottom = SCREEN_HEIGHT - 200  # Prevent moving out of the bottom boundary
 
     # Sprint
     # Sprint
