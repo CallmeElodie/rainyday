@@ -17,11 +17,11 @@ pygame.display.set_icon(playerSprite)
 
 # Resize the image to a smaller size (e.g., 50x50)
 playerSprite = pygame.transform.scale(playerSprite, (100, 100))
-groundSprite = pygame.transform.scale(groundSprite, (SCREEN_HEIGHT, 80))
+groundSprite = pygame.transform.scale(groundSprite, (SCREEN_WIDTH, 80))
 
 # Define the player object (position and size based on the resized image)
 player = pygame.Rect(150, 100, playerSprite.get_width(), playerSprite.get_height())
-ground = pygame.Rect(0, SCREEN_HEIGHT -80, groundSprite.get_width(), groundSprite.get_height())
+ground = pygame.Rect(0, SCREEN_HEIGHT -groundSprite.get_height(), groundSprite.get_width(), groundSprite.get_height())
 
 # Define the speed (slower movement using pixels per frame)
 speed = 2  # Move 1 pixel per frame, adjust as needed
