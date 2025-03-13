@@ -1,0 +1,10 @@
+# Plan
+
+#Code Additions
+
+    # Turn my code into multiple files
+
+#Game Additions
+
+    # Add Rain
+    # Add Plants

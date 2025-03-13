@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f24bcb-acff-4da6-9c38-c6e87ea11298" name="Changes" comment="fixed variable methods">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="e2f24bcb-acff-4da6-9c38-c6e87ea11298" name="Changes" comment="fixed variable methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +73,7 @@
       <workItem from="1741050043904" duration="22000" />
       <workItem from="1741227155812" duration="3233000" />
       <workItem from="1741746085656" duration="2230000" />
+      <workItem from="1741831295093" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -122,6 +121,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed variable methods" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pygame$main.coverage" NAME="main Coverage Results" MODIFIED="1741748331771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pygame$main.coverage" NAME="main Coverage Results" MODIFIED="1741831940908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
