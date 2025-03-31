@@ -19,15 +19,16 @@ pygame.display.set_icon(playerSprite)
 # Size the images
 playerSprite = pygame.transform.scale(playerSprite, (100, 100))
 groundSprite = pygame.transform.scale(groundSprite, (SCREEN_WIDTH, 80))
+rainSprite = pygame.transform.scale(rainSprite, (60, 60))
 
 # Define the objects
 player = pygame.Rect(150, 100, playerSprite.get_width(), playerSprite.get_height())
 ground = pygame.Rect(0, SCREEN_HEIGHT - groundSprite.get_height(), groundSprite.get_width(), groundSprite.get_height())
-rain = pygame.Rect(player.x + 35, player.y + 40, rainSprite.get_width() * 1.5, rainSprite.get_height() * 1.5)
+rain = pygame.Rect(player.x + 25, player.y + 25, rainSprite.get_width(), rainSprite.get_height())
 
-# Define the speed
+# Constants
 speed = 2
-gravity = 4
+gravity = 6
 
 # Rain collision tracking
 has_collided = False
@@ -54,10 +55,10 @@ while run:
         collision_time = current_time
 
     # Check if 1 second has passed since collision
-    if has_collided and current_time - collision_time >= reset_delay:
+    if (has_collided and current_time - collision_time >= reset_delay) and (key[pygame.K_SPACE]):
         # Reset rain position to player's position
-        rain.x = player.x + 35
-        rain.y = player.y + 40
+        rain.x = player.x + 25
+        rain.y = player.y + 25
         has_collided = False  # Reset collision state
 
     # Draw sprites (always draw rain regardless of collision)
