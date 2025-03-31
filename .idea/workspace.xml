@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f24bcb-acff-4da6-9c38-c6e87ea11298" name="Changes" comment="added plan.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="e2f24bcb-acff-4da6-9c38-c6e87ea11298" name="Changes" comment="added spacebar to rain and made rain bigger" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +76,7 @@
       <workItem from="1741746085656" duration="2230000" />
       <workItem from="1741831295093" duration="1899000" />
       <workItem from="1742008134261" duration="2189000" />
-      <workItem from="1743432584264" duration="736000" />
+      <workItem from="1743432584264" duration="1589000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -121,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741834348611</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added spacebar to rain and made rain bigger">
+      <option name="closed" value="true" />
+      <created>1743434129263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743434129263</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,10 +138,11 @@
     <MESSAGE value="added ground and new bottom collision" />
     <MESSAGE value="fixed variable methods" />
     <MESSAGE value="added plan.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="added plan.txt" />
+    <MESSAGE value="added spacebar to rain and made rain bigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spacebar to rain and made rain bigger" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Pygame$main.coverage" NAME="main Coverage Results" MODIFIED="1742010345359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rainyday$main.coverage" NAME="main Coverage Results" MODIFIED="1743433324097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rainyday$main.coverage" NAME="main Coverage Results" MODIFIED="1743433594683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
