@@ -1,10 +1,14 @@
 # Plan
 
-#Code Additions
+# Code Additions
 
     # Turn my code into multiple files
 
-#Game Additions
+# Game Additions
 
     # Add Rain
     # Add Plants
+
+# Misc Thoughts
+
+    # Some of these ai comments in main.py are unnecessary and should be removed
